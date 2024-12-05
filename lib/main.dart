@@ -11,9 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: "main",
+      ),
       debugShowCheckedModeBanner: false,
       initialRoute: RouteNames.kSplashScreen,
-          routes: RoutesManagers.routes,
+      routes: RoutesManagers.routes,
     );
   }
 }
