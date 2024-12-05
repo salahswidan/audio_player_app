@@ -1,31 +1,29 @@
+import 'package:audio_player_app/controller/splash_controller.dart';
 import 'package:audio_player_app/core/resourses/color_managers.dart';
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatelessWidget {
+import '../../../core/resourses/routes_managers.dart';
+import '../widgets/custom_logo_splash_screen.dart';
+
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    SplashController.navigatorToOnBoardingScreen(context: context);
+  
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-          width: double.infinity,
-          height: double.infinity,
-          child: Center(
-            child: Image.asset(
-              "assets/images/logo.png",
-              height: 150,
-              width: 150,
-            ),
-          ),
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment(0.20, -0.98),
-                end: Alignment(-0.20, 0.98),
-                colors: [
-                  ColorManagers.kPrimaryColor,
-                  ColorManagers.kSecondaryColor
-                ]),
-          )),
+      body: CustomLogoSplashScreen(),
     );
   }
 }
