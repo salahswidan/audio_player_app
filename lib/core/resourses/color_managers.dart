@@ -6,4 +6,5 @@ class ColorManagers {
   static const Color kSecondaryColor=Color(0xff2C17CA);
   static const Color klightWhite3Color=Color(0xff2F509A);
   static const Color klightWhite2Color=Color(0xff80CFF2);
+  static const Color kthridPrimaryColor=Color(0xff854F9F);
 }

@@ -9,4 +9,12 @@ class HomeController {
       Icon(Icons.settings),
     ];
 
+   static List<Widget> HomePages = [
+      Scaffold(body: Center(child: Text("align_horizontal_left_outlined"),),),
+      Scaffold(body: Center(child: Text("home"),),),
+      Scaffold(body: Center(child: Text("haert"),),),
+      Scaffold(body: Center(child: Text("list"),),),
+      Scaffold(body: Center(child: Text("setting"),),),
+    ];
+
 }
