@@ -1,10 +1,10 @@
 import 'package:audio_player_app/core/resourses/color_managers.dart';
 import 'package:flutter/material.dart';
 
-import '../../../controller/home_controller.dart';
+import '../../../controller/main_home_controller.dart';
 
-class CustomBottomNavBarHomePage extends StatelessWidget {
-  const CustomBottomNavBarHomePage({
+class CustomBottomNavBarMainHomePage extends StatelessWidget {
+  const CustomBottomNavBarMainHomePage({
     super.key,
     required this.onTap,
     required this.index,
@@ -23,8 +23,9 @@ class CustomBottomNavBarHomePage extends StatelessWidget {
         type: BottomNavigationBarType.fixed, //! to show more tha 3 icon
         backgroundColor: Color(0xff261F44),
         items: [
-          for (int i = 0; i < HomeController.HomeIcon.length; i++)
-            BottomNavigationBarItem(icon: HomeController.HomeIcon[i], label: '')
+          for (int i = 0; i < MainHomeController.HomeIcon.length; i++)
+            BottomNavigationBarItem(
+                icon: MainHomeController.HomeIcon[i], label: '')
         ]);
   }
 }
