@@ -7,4 +7,5 @@ class ColorManagers {
   static const Color klightWhite3Color=Color(0xff2F509A);
   static const Color klightWhite2Color=Color(0xff80CFF2);
   static const Color kthridPrimaryColor=Color(0xff854F9F);
+  static const Color kDarkBlueeColor=Color(0xff261F5C);
 }
