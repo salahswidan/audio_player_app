@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/resourses/color_managers.dart';
 import '../widgets/custom_text_field_home_page.dart';
+import '../widgets/custom_title_search_home_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -18,8 +19,10 @@ class HomePage extends StatelessWidget {
             ColorManagers.kDarkBlueeColor
           ])),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomTextFieldHomePage()
+          CustomTextFieldHomePage(),
+          CustomTitleSearchHomePage()
         ],
       ),
     );
