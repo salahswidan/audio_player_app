@@ -1,5 +1,8 @@
+import 'package:audio_player_app/controller/on_boarding_controller.dart';
 import 'package:audio_player_app/core/resourses/color_managers.dart';
 import 'package:flutter/material.dart';
+
+import '../../../core/resourses/routes_managers.dart';
 
 class CustomBottonOnBoardingScreen extends StatelessWidget {
   const CustomBottonOnBoardingScreen({
@@ -10,7 +13,7 @@ class CustomBottonOnBoardingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
       onPressed: () {
-         
+        OnBoardingController.navigatorToHomeScreen(context: context);
       },
       child: Container(
           alignment: Alignment.center,
