@@ -1,3 +1,4 @@
+import 'package:audio_player_app/core/resourses/routes_managers.dart';
 import 'package:audio_player_app/models/soura_model.dart';
 import 'package:flutter/material.dart';
 
@@ -5,10 +6,11 @@ class CustomSearchDetails extends StatelessWidget {
   CustomSearchDetails({
     super.key,
     required this.souraModel,
-    required this.itemCount,
+    required this.itemCount, required this.onTap,
   });
   final SouraModel souraModel;
   final int itemCount;
+  final GestureTapCallback onTap;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -19,7 +21,7 @@ class CustomSearchDetails extends StatelessWidget {
             //shrinkWrap: true,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) => GestureDetector(
-                  onTap: () {},
+                  onTap:onTap,
                   child: Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

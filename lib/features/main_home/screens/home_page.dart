@@ -1,3 +1,4 @@
+import 'package:audio_player_app/controller/home_page_controlller.dart';
 import 'package:audio_player_app/features/main_home/widgets/custom_recently_sourahs_card.dart';
 import 'package:audio_player_app/models/soura_model.dart';
 import 'package:flutter/cupertino.dart';
@@ -34,6 +35,9 @@ class HomePage extends StatelessWidget {
               height: 22,
             ),
             CustomSearchDetails(
+              onTap: () {
+                HomePageControlller.naviagtorToPlaySouraScreen(context);
+              },
               itemCount: 3,
               souraModel: SouraModel(
                   image: "assets/images/quran_image/qu3.jpg",
