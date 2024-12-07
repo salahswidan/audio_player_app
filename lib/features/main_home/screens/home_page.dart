@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/resourses/color_managers.dart';
+import '../widgets/custom_recently_player_list_view.dart';
 import '../widgets/custom_text_field_home_page.dart';
 import '../widgets/custom_title_search_home_page.dart';
 
@@ -22,7 +23,8 @@ class HomePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CustomTextFieldHomePage(),
-          CustomTitleSearchHomePage()
+          CustomTitleSearchHomePage(),
+          CustomRecentlyPlayerListView(),
         ],
       ),
     );
