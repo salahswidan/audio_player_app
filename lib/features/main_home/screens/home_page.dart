@@ -23,8 +23,19 @@ class HomePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CustomTextFieldHomePage(),
-          CustomTitleSearchHomePage(),
-          CustomRecentlyPlayerListView(),
+          CustomTitleSearchHomePage(
+            title: "Recently Played",
+          ),
+          SizedBox(
+            height: 22,
+          ),
+          CustomRecentlyPlayerListView(
+            readerName: "Adeel",
+            souraName: "Al-Baqarah",
+          ),
+          CustomTitleSearchHomePage(
+            title: "Recently Sourahs",
+          ),
         ],
       ),
     );
