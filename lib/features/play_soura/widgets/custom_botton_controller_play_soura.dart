@@ -61,9 +61,12 @@ class CustomBottonControllerPlaySoura extends StatelessWidget {
           ],
         ),
         Slider(
+        
           value: value,
           onChanged: onChange,
           activeColor: ColorManagers.klightWhiteColor,
+          
+          
         )
       ],
     );

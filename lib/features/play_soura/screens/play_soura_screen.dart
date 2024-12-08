@@ -1,10 +1,12 @@
 import 'package:audio_player_app/features/play_soura/widgets/custom_app_bar_play_soura_screen.dart';
 import 'package:audio_player_app/features/play_soura/widgets/custom_botton_controller_play_soura.dart';
 import 'package:audio_player_app/models/soura_model.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/resourses/color_managers.dart';
 import '../widgets/custom_soura_details_play_screen.dart';
+import '../widgets/custom_tools_play_soura.dart';
 
 class PlayMusicScreen extends StatelessWidget {
   const PlayMusicScreen({
@@ -43,8 +45,30 @@ class PlayMusicScreen extends StatelessWidget {
                   CustomBottonControllerPlaySoura(
                     value: 0.6,
                     onChange: (value) {},
-                    
                   ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 23.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "2.03",
+                          style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w500,
+                              color: ColorManagers.klightWhiteColor),
+                        ),
+                        Text(
+                          "4.03",
+                          style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w500,
+                              color: ColorManagers.klightWhiteColor),
+                        ),
+                      ],
+                    ),
+                  ),
+                  CustomToolsPlaySoura(),
                 ],
               ),
             ),
