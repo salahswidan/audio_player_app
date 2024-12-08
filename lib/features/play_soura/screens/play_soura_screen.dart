@@ -38,9 +38,13 @@ class PlayMusicScreen extends StatelessWidget {
                   ),
                   CustomSouraDetailsPlayScreen(),
                   SizedBox(
-                    height: 28,
+                    height: 29,
                   ),
-                  CustomBottonControllerPlaySoura(),
+                  CustomBottonControllerPlaySoura(
+                    value: 0.6,
+                    onChange: (value) {},
+                    
+                  ),
                 ],
               ),
             ),
