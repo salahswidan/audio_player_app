@@ -63,6 +63,7 @@ flutter:
     - assets/images/
     - assets/images/bottom_nav_images/left_alignment.png
     - assets/images/quran_image/qu3.jpg
+    - assets/images/controllers_button_music_image/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

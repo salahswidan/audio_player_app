@@ -1,4 +1,5 @@
 import 'package:audio_player_app/features/play_soura/widgets/custom_app_bar_play_soura_screen.dart';
+import 'package:audio_player_app/features/play_soura/widgets/custom_botton_controller_play_soura.dart';
 import 'package:audio_player_app/models/soura_model.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +36,11 @@ class PlayMusicScreen extends StatelessWidget {
                   SizedBox(
                     height: 124,
                   ),
-                  CustomSouraDetailsPlayScreen()
+                  CustomSouraDetailsPlayScreen(),
+                  SizedBox(
+                    height: 28,
+                  ),
+                  CustomBottonControllerPlaySoura(),
                 ],
               ),
             ),
