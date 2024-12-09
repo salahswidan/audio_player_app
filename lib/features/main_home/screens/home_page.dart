@@ -1,8 +1,10 @@
 import 'package:audio_player_app/controller/home_page_controlller.dart';
+import 'package:audio_player_app/core/resourses/constants_value.dart';
 import 'package:audio_player_app/features/main_home/widgets/custom_recently_sourahs_card.dart';
 import 'package:audio_player_app/models/soura_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 import '../../../core/resourses/color_managers.dart';
 import '../widgets/custom_search_details.dart';
@@ -39,11 +41,7 @@ class HomePage extends StatelessWidget {
                 HomePageControlller.naviagtorToPlaySouraScreen(context);
               },
               itemCount: 3,
-              souraModel: SouraModel(
-                  image: "assets/images/quran_image/qu3.jpg",
-                  reader: "Salah",
-                  soura: "Al-Baqarah",
-                  pathSoura: "pathSoura"),
+              ListSouraModel:ConstantsValue.listQuarn,
             ),
             CustomTitleSearchHomePage(
               title: "Recommended Sourahs",

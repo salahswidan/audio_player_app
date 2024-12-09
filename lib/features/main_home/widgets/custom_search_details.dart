@@ -5,10 +5,11 @@ import 'package:flutter/material.dart';
 class CustomSearchDetails extends StatelessWidget {
   CustomSearchDetails({
     super.key,
-    required this.souraModel,
-    required this.itemCount, required this.onTap,
+    required this.ListSouraModel,
+    required this.itemCount,
+    required this.onTap,
   });
-  final SouraModel souraModel;
+  final List<SouraModel> ListSouraModel;
   final int itemCount;
   final GestureTapCallback onTap;
   @override
@@ -21,14 +22,14 @@ class CustomSearchDetails extends StatelessWidget {
             //shrinkWrap: true,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) => GestureDetector(
-                  onTap:onTap,
+                  onTap: onTap,
                   child: Container(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         ClipRRect(
                           child: Image.asset(
-                            "assets/images/quran_image/qu3.jpg",
+                            ListSouraModel[index].image,
                             fit: BoxFit.cover,
                             width: 151,
                             height: 151,
@@ -37,7 +38,7 @@ class CustomSearchDetails extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         Text(
-                          souraModel.soura,
+                          ListSouraModel[index].soura,
                           style: TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.w500,
@@ -47,7 +48,7 @@ class CustomSearchDetails extends StatelessWidget {
                           height: 9,
                         ),
                         Text(
-                          souraModel.reader,
+                          ListSouraModel[index].reader,
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
